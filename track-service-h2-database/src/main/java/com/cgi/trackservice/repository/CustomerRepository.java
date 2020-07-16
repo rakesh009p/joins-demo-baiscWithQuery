@@ -10,6 +10,6 @@ import java.util.List;
 
 @Repository
 public interface CustomerRepository  extends JpaRepository<Customer,Integer> {
-    @Query("SELECT new com.cgi.trackservice.dto.TrackResponse(c.customerName,t.trackName) FROM Customer c JOIN c.trackList t")
-     List<TrackResponse> getJoinInformation();
+
+
 }
